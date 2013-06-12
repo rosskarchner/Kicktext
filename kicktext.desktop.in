@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Kicktext
+_Comment=Kicktext application
+Categories=GNOME;Utility;
+Exec=kicktext
+Icon=kicktext
+Terminal=false
+Type=Application
