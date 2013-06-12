@@ -17,4 +17,4 @@ What I'd like to add, before minting version 1.0:
 * Extensible transformation tools (plus built-in support for AsciiDoc)
 * pygments for github-style syntax coloring.
 
-It's not my goal to create a 1:1 copy, but the core concept is definitely inspired by Bret Terpstra's [Marked](http://markedapp.com). Thank you!
+It's not my goal to create a 1:1 copy, but the core concept is definitely inspired by Brett Terpstra's [Marked](http://markedapp.com). Thank you!
