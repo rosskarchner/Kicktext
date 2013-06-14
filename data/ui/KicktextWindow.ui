@@ -179,6 +179,32 @@
               </object>
             </child>
             <child>
+              <object class="GtkMenuItem" id="mnu_format">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Format</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="formatMenu">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="mnu_theme">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Theme</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="themeMenu">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
               <object class="GtkMenuItem" id="mnu_help">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
@@ -275,5 +301,4 @@
       </object>
     </child>
   </object>
-  <object class="GtkTextBuffer" id="textbuffer1"/>
 </interface>
