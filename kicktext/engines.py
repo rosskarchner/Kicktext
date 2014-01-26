@@ -5,12 +5,10 @@ HTML
 import subprocess
 
 
-def nullengine(path):
-    return file(path).read()
 
 
 def markdown(path):
-    return subprocess.check_output('pandoc', stdin=file(path))
+    return subprocess.check_output(['pandoc', '-t','html5', path])
 
 
 ENGINES = {'Markdown': markdown}
