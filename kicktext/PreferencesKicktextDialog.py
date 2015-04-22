@@ -37,7 +37,7 @@ class PreferencesKicktextDialog(PreferencesDialog):
         super(PreferencesKicktextDialog, self).finish_initializing(builder)
 
         # Bind each preference widget to gsettings
-        settings = Gio.Settings("net.launchpad.kicktext")
+        #settings = Gio.Settings("net.launchpad.kicktext")
         widget = self.builder.get_object('example_entry')
         settings.bind("example", widget, "text", Gio.SettingsBindFlags.DEFAULT)
 
