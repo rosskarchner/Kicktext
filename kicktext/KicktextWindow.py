@@ -17,24 +17,16 @@
 from locale import gettext as _
 
 from gi.repository import Gtk, WebKit # pylint: disable=E0611
-import logging
-logger = logging.getLogger('kicktext')
 
-from kicktext_lib import Window
-from kicktext.AboutKicktextDialog import AboutKicktextDialog
-from kicktext.PreferencesKicktextDialog import PreferencesKicktextDialog
 from kicktext import controllers
 
 # See kicktext_lib.Window.py for more details about how this class works
-class KicktextWindow(Window):
+class KicktextWindow(Gtk.Window):
     __gtype_name__ = "KicktextWindow"
     
-    def finish_initializing(self, builder): # pylint: disable=E1002
+    def __init__(self):
         """Set up the main window"""
-        super(KicktextWindow, self).finish_initializing(builder)
-
-        self.AboutDialog = AboutKicktextDialog
-        self.PreferencesDialog = PreferencesKicktextDialog
+        super(KicktextWindow, self).__init__()
 
         # Code for other initialization actions should be added here.
         self.controller = controllers.DocumentController(self)
